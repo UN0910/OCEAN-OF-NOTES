@@ -1,0 +1,278 @@
+<app-alert [message]="popup" *ngIf="submitted" (close)="onClose()"></app-alert>
+<div class="tiwari">
+  <!-- 1st section -->
+  <div class="utkarsh">
+    <div class="container-fluid">
+      <img src="/assets/images/logo-main.png" alt="OCEAN-OF-NOTES" class="img-responsive" style="width:50%">
+    </div>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <form class="searchbar" action="">
+      <input type="search" (change)="getKeyword($event)" placeholder="Search for Notes begin...">
+      <i class="fa fa-search" (click)="goToDownload()"></i>
+    </form>
+    <br>
+  </div>
+
+  <!-- 2nd section -->
+  <div id="services" class="container-fluid text-center">
+    <br>
+    <br>
+    <h1>SERVICES</h1>
+    <h3>What we offer</h3>
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-ok-sign"></span>
+        <h4>RELIABLE</h4>
+          <h5>We assure you to gain effective study material</h5>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-bookmark"></span>
+          <h4>RESPONSIVE</h4>
+          <h5>All enquiries answered within 24hrs</h5>
+        </div>
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-briefcase"></span>
+          <h4>SCALABLE</h4>
+          <h5>Improving, upgrading and constantly updating the contents for your readiness</h5>
+        </div>
+      </div>
+      <br><br>
+      <div class="row slideanim">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-leaf"></span>
+          <h4>RATE</h4>
+          <h5>Rate the study material as per your experience, thus help us, help you better</h5>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-certificate"></span>
+        <h4>PERFORMANCE</h4>
+         <h5>Get yourself easy to explore in the era of digital notes</h5>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-heart"></span>
+        <h4>LEARN FROM FACULTIES</h4>
+        <h5>Connect to the respective notes owner in case of any query</h5>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+</div>
+
+<!-- 3rd section -->
+  <div class="khushboo">
+    <div class="carousel">
+    <br>
+    <br>
+    <br>
+
+      <p>WHAT THEY SAY</p>
+      <h3>Reviews of some authorized faculties which they experienced while using our application.</h3>
+      <br>
+      <br>
+      <ul class="slides">
+        <input type="radio" name="radio-buttons" id="img-1" checked />
+
+        <li class="slide-container">
+          <div class="slide-image">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-4">
+                  <h2> Abhimanyu Rathore</h2>
+                </div>
+                <div class="col-sm-8">
+                  <h2> " Making clean notes and organizing them takes a lot of time. Also to keep the track of notebooks is a tedious job.
+                    I would really appreciate that OCEAN OF NOTES has made it easy.  "</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <label for="img-3" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-2" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+
+        <input type="radio" name="radio-buttons" id="img-2" />
+
+        <li class="slide-container">
+          <div class="slide-image">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-4">
+                  <h2> Ridhima <br> Patel</h2>
+                </div>
+                <div class="col-sm-8">
+                  <h2> " OCEAN OF NOTES has done here a spectacular job in delivering their service to our faculties and students both.
+                    It's fascinating to find all study material under one roof and being able to contact people in case of queries. "</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <label for="img-1" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-3" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+
+        <input type="radio" name="radio-buttons" id="img-3" />
+        <li class="slide-container">
+          <div class="slide-image">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-4">
+                  <h2> Rishabh Khandelwal</h2>
+                </div>
+                <div class="col-sm-8">
+                  <h2> " I really encourage other students to visit and use the services given by the platform as it has been quite beneficial for me.
+                    It saved me a lot of time and helped me gain profound knowledge. "</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-controls">
+            <label for="img-2" class="prev-slide">
+              <span>&lsaquo;</span>
+            </label>
+            <label for="img-1" class="next-slide">
+              <span>&rsaquo;</span>
+            </label>
+          </div>
+        </li>
+        <br>
+        <br>
+        <br>
+
+        <div class="carousel-dots">
+          <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+          <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+          <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+        </div>
+      </ul>
+      <br>
+      <br>
+    </div>
+  </div>
+
+ <!-- 4th section -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <section class="page-section bg-light">
+    <br>
+    <br>
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+            <h3 class="section-subheading text-muted">"Pleasure in the Job puts Perfection in the Work."</h3>
+            <br>
+            <br>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="team-member">
+                <img class="mx-auto rounded-circle" src="/assets/images/khushboo.svg" alt="" />
+                <h4>KHUSHBOO SOLANKI</h4>
+                <p class="text-muted">EDITOR</p>
+                <ul class="social-network social-circle">
+                  <li><a target="_blank" href="https://instagram.com/khushboo.solanki9?igshid=1hbt7v5mqf833" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  <li><a target="_blank" href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a target="_blank" href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="team-member">
+                <img class="mx-auto rounded-circle" src="assets/images/utkarsh.svg" alt="" />
+                <h4>UTKARSH TIWARI</h4>
+                <p class="text-muted">WEB DEVELOPER</p>
+                <ul class="social-network social-circle">
+                  <li><a target="_blank" href="https://instagram.com/utkarsh_un_0910?igshid=el1nhxj130up" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                  <li><a target="_blank" href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a target="_blank" href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="assets/images/akshata.svg" alt="" />
+                    <h4>AKSHATA GUPTA</h4>
+                    <p class="text-muted">MARKETING STRATEGIST</p>
+                    <ul class="social-network social-circle">
+                      <li><a target="_blank" href="https://instagram.com/_.akshata_._?igshid=1fu114z62uy5e" class="icoInstagram" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                      <li><a target="_blank" href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                      <li><a target="_blank" href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+        <br>
+  <br>
+  </section>
+
+  <!-- 5th section -->
+  <section class="page-section" id="contact">
+    <br>
+    <br>
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <h3 class="section-subheading text-muted">For any query, suggestions and issues feel free to contact us. We will answer you within 24hrs.</h3>
+        </div>
+        <br>
+        <br>
+        <form id="contactForm" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="row align-items-stretch mb-5">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input formControlName="name" name="name" class="form-control" id="name" type="text" placeholder="* Your Name *"/>
+                    </div>
+                    <div class="form-group">
+                        <input formControlName="email" name="email" class="form-control" id="email" email type="email" placeholder="* Your Email *"/>
+                    </div>
+                    <div class="form-group mb-md-0">
+                        <input formControlName="phone" name="phone" class="form-control" minlength="10" maxlength="11" id="phone" type="tel" placeholder="* Your Phone *"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group form-group-textarea mb-md-0">
+                        <textarea formControlName="message" name="message" class="form-control" id="message" placeholder="* Your Message *"></textarea>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="text-center">
+                <div id="success"></div>
+                <div class="button">
+                <button class="btn btn-primary" [disabled]="!contactForm.valid" type="submit">Send Message</button>
+                </div>
+                <br>
+                <br>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+  </section>
+
+  <script src="assets/mail/jqBootstrapValidation.js"></script>
+          <script src="assets/mail/contact_me.js"></script>
+
+

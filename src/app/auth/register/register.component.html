@@ -1,0 +1,40 @@
+<body>
+  <section>
+    <div class="container">
+
+      <div class="user signinBx">
+
+        <div class="formBx">
+
+          <form #userRegForm="ngForm" (ngSubmit)="createUser(userRegForm)">
+            <h2>Create An account</h2>
+            <app-loading *ngIf="showSpinner && !authError"></app-loading>
+            <div class="row" *ngIf="authError">
+        <div class="col-12 alert alert-danger">
+          {{ authError?.message }}
+        </div>
+      </div>
+            <input ngModel #username="ngModel" name="username" type="text" class="form-control" id="username" placeholder="USERNAME" required/>
+
+            <input ngModel #email="ngModel" name="email" type="email" class="form-control" placeholder="EMAIL-ID" required/>
+
+            <input ngModel #password="ngModel" name="password" type="password" class="form-control" minlength="6" maxlength="12" placeholder="PASSWORD" required/>
+
+            <input ngModel #confirmPassword="ngModel" ngValidateEqual="password" name="confirmpassword" type="password" class="form-control" minlength="6" maxlength="12" placeholder="CONFIRM-PASSWORD" required/>
+
+            <div class="text-center">
+              <button class="btn btn-primary" [disabled]="!userRegForm.valid" type="submit">SIGN UP</button>
+            </div>
+            <br>
+            <p class="signup" style="text-align: center;">
+              ALREADY HAVE AN ACCOUNT ?<br>
+              <a routerLink="/authenticate-sign-in">Sign In.</a>
+            </p>
+          </form>
+        </div>
+        <div class="imgBx"><img src="/assets/images/sign-up-01.png" width="400px" height="500px"></div>
+      </div>
+      </div>
+  </section>
+</body>
+

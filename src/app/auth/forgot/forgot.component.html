@@ -1,0 +1,38 @@
+<app-alert [message]="popup" *ngIf="submitted" (close)="onClose()"></app-alert>
+<body>
+  <section>
+    <div class="container">
+      <div class="user signinBx">
+        <div class="imgBx"><img src="/assets/images/sign-in-01.png" width="400px" height="500px"></div>
+        <div class="formBx">
+          <form #forgot="ngForm" (ngSubmit)="forgotPassword(forgot)">
+            <h2>forgot password ?</h2>
+            <p class="signup" style="text-align: center;">
+              please enter your email address below and
+              we will send you information to recover your password
+            </p>
+            <br *ngIf="authError">
+            <app-loading *ngIf="showSpinner && !authError"></app-loading>
+            <div class="row" *ngIf="authError">
+              <div class="col-12 alert alert-danger">{{ authError?.message }}</div>
+            </div>
+            <input ngModel #email="ngModel" name="email" type="email" class="form-control" required email placeholder="E-MAIL ID">
+            <div class="text-center">
+              <button class="btn btn-primary" [disabled]="!forgot.valid" type="submit">SUBMIT</button>
+            </div>
+            <br>
+            <p class="signup" style="text-align: center;">
+              Don't have an account ?<br>
+              <a routerLink="/authenticate-sign-up">Sign Up.</a>
+            </p>
+            <p class="signup" style="text-align: center;">
+              ALREADY HAVE AN ACCOUNT ?<br>
+              <a routerLink="/authenticate-sign-in">Sign In.</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+

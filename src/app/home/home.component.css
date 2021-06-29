@@ -1,0 +1,486 @@
+.tiwari{
+  font-family: "Century Gothic";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #f2f2f2;
+}
+
+.utkarsh{
+  background-image: url("/assets/images/project-wallpaper-01.png");
+  background-attachment: fixed;
+  background-size: 1300px 800px;
+}
+
+.img-responsive{
+  padding-top: 75px;
+  padding-bottom: 70px;
+  display: block;
+  margin: auto;
+ }
+
+form.searchbar{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+}
+
+form.searchbar input{
+  position: absolute;
+  width: 100%;;
+  height: 32px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+form.searchbar .fa{
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: #07051a;
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 1s;
+}
+
+form.searchbar:hover{
+  width: 500px;
+  cursor: pointer;
+}
+
+form.searchbar:hover input{
+  display: block;
+}
+
+form.searchbar:hover .fa{
+  background: #07051a;
+  color: white;
+}
+
+h1 {
+  padding-top: 10px;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 1000;
+  margin-bottom: 30px;
+}
+
+h5{
+  font-size: 18px;
+  line-height: 1.375em;
+  color: #9e2332;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-size: 25px;
+  line-height: 1.375em;
+  color: #303030;
+  font-weight: 1000;
+  margin-bottom: 10px;
+}
+
+.glyphicon{
+  color: #9e2332;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.carousel > p{
+  font-family: "Century Gothic";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 50px !important;
+  text-align: center;
+  color: #303030;
+  padding-top: 20px;
+}
+
+.carousel > h3{
+  font-family: "Century Gothic";
+  font-style: italic;
+  font-size: 25px !important;
+  text-align: center;
+  color: #9e2332;
+}
+
+h2{
+  font-family: "Century Gothic";
+}
+
+.col-sm-4 > h2{
+  font-size: 35px !important;
+  color: #303030;
+  font-weight: 1000;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.col-sm-8 > h2{
+  font-size: 25px !important;
+  color: #9e2332;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.carousel {
+  background-image: url(/assets/images/project-wallpaper-01.png);
+  background-attachment: fixed;
+  background-size: 1300px 800px;
+}
+
+ul.slides {
+  display: block;
+  position: relative;
+  height: 200px;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+/* .slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+} */
+
+ul.slides input {
+  display: none;
+}
+
+
+.slide-container {
+  display: block;
+}
+
+.slide-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: height 2s ease-in-out;
+}
+
+.slide-image img {
+  width: auto;
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 100px;
+  line-height: 80px;
+  color: #9e2332;
+}
+
+.carousel-controls label {
+  display: none;
+  position: absolute;
+  padding: 0 20px;
+  opacity: 0.5;
+  transition: opacity .2s;
+  cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+  opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+  opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+  width: 10%;
+  text-align: left;
+  left: 0;
+}
+
+.carousel-controls .next-slide {
+  width: 10%;
+  text-align: right;
+  right: 0;
+}
+
+.carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+  opacity: 1;
+}
+
+.carousel-dots .carousel-dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #9e2332;
+  opacity: 0.5;
+  margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+   display: block;
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3{
+opacity: 1;
+}
+input:checked + .slide-container .nav label { display: block; }
+
+.page-section{
+  background-color: #f2f2f2;
+  font-family: 'Century Gothic';
+}
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.team-member {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.team-member img {
+  width: 20rem;
+  height: 20rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.25);
+}
+.team-member h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.text-center > h3{
+  color: #9e2332;
+  font-style: italic;
+}
+
+.text-center > h2{
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.team-member > p{
+  color: #9e2332;
+  font-style: italic;
+  font-weight: bold;
+}
+
+section#contact {
+  background-image: url("/assets/images/project-wallpaper-01.png");
+  background-attachment: fixed;
+  background-size: 1300px 800px;
+  font-family: 'Century Gothic';
+}
+section#contact .section-heading {
+  padding-top: 10px;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 50px;
+}
+section#contact .section-subheading {
+  color: #9e2332;
+  font-style: italic;
+}
+section#contact form#contactForm .form-group {
+  margin-bottom: 1.5rem;
+}
+section#contact form#contactForm .form-group input,
+section#contact form#contactForm .form-group textarea {
+  padding: 1.25rem;
+}
+section#contact form#contactForm .form-group input.form-control {
+  height: auto;
+}
+section#contact form#contactForm .form-group-textarea {
+  height: 100%;
+}
+section#contact form#contactForm .form-group-textarea textarea {
+  height: 100%;
+  min-height: 17rem;
+}
+section#contact form#contactForm p.help-block {
+  margin: 0;
+}
+section#contact form#contactForm .form-control:focus {
+  border-color: #9e2332;
+  box-shadow: black;
+}
+section#contact form#contactForm ::-webkit-input-placeholder {
+  font-family: 'Century Gothic';
+  font-weight: 700;
+  color: #9e2332;
+  text-transform: uppercase;
+  font-style: italic;
+  opacity: 0.7;
+}
+section#contact form#contactForm{
+  font-family: 'Century Gothic';
+  font-weight: 700;
+  color: #9e2332;
+  text-transform: uppercase;
+  font-style: italic;
+}
+section#contact form#contactForm{
+  font-family: 'Century Gothic';
+  font-weight: 700;
+  color: #9e2332;
+  text-transform: uppercase;
+  font-style: italic;
+}
+section#contact form#contactForm{
+  font-family: 'Century Gothic';
+  font-weight: 700;
+  color: #9e2332;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.button > button{
+  background-color: #9e2332;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  text-transform: uppercase;
+  border: #9e2332;
+}
+
+.button > button:hover{
+  background: #9e2332;
+}
+
+
+ul.social-network {
+	list-style: none;
+	display: inline;
+	margin-left:0 !important;
+	padding: 0;
+}
+ul.social-network li {
+	display: inline;
+	margin: 0 5px;
+}
+
+
+/* footer social icons */
+.social-network a.icoInstagram:hover {
+	background: #f09433;
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.social-network a.icoRss:hover {
+	background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {
+	background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {
+	background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {
+	background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {
+	background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+	background-color:#007bb7;
+}
+.social-network a.icoInstagram:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+	color:#fff;
+}
+a.socialIcon:hover, .socialHoverClass {
+	color:#44BCDD;
+}
+
+.social-circle li a {
+	display:inline-block;
+	position:relative;
+	margin:0 auto 0 auto;
+	-moz-border-radius:50%;
+	-webkit-border-radius:50%;
+	border-radius:50%;
+	text-align:center;
+	width: 40px;
+	height: 40px;
+	font-size:20px;
+}
+.social-circle li i {
+	margin:0;
+	line-height:40px;
+	text-align: center;
+}
+
+.social-circle li a:hover i, .triggeredHover {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+.social-circle i {
+	color: black;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+a {
+ background-color: #8c8c8c;
+}

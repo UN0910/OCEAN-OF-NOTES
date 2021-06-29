@@ -1,0 +1,31 @@
+<div class="container-fluid">
+<h1>MY ACCOUNT</h1>
+<br>
+<br>
+<br>
+
+<section id="welcome-section">
+  <div class="container welcome">
+    <div class="welcome-text">
+      <h4>{{ user?.displayName }}</h4>
+      <p>OCEAN OF NOTE'S USER</p>
+      <br>
+      <br>
+      <h2>personal info</h2>
+      <h3>E-MAIL ID: {{ user?.email }}</h3>
+      <!-- <li>DATE OF BIRTH: </li>
+      <h3>CONTACT NO.:</h3>
+      <h3><button class="btn btn-primary mr-2" *ngIf="!user" (click)="register()">Register</button></h3>
+      <h3><button class="btn btn-primary" *ngIf="!user" (click)="login()">Login</button></h3> -->
+      <br>
+      <app-loading *ngIf="showSpinner"></app-loading>
+      <br>
+      <h5><button class="btn btn-primary" *ngIf="user" (click)="logout()">Logout</button></h5>
+    </div>
+    <div class="welcome-img">
+      <img src="https://i.postimg.cc/d3Hmj92y/person.png" id="profile_person_img" alt="Gagan">
+    </div>
+  </div>
+</section>
+</div>
+

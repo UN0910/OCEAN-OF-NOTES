@@ -1,0 +1,45 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 50;
+}
+
+.alert-box {
+  border-radius: 10px;
+  font-family: 'Century Gothic';
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  position: fixed;
+  top: 30vh;
+  left: 20vw;
+  width: 60vw;
+  padding: 16px;
+  padding-left: 40px;
+  z-index: 100;
+  background: #f2f2f2;
+  box-shadow: 0 2px 8px rbga(0, 0, 0, 0.26);
+}
+
+.alert-box-actions {
+  padding-right: 20px;
+  text-align: right;
+}
+
+button{
+  background-color: #9e2332;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  text-transform: uppercase;
+  border: #9e2332;
+}
+
+button:hover{
+  background: #9e2332;
+}

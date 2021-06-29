@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'oceanofnotes2021';
+
+  loadedFeature= 'home';
+
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 }

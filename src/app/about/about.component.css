@@ -1,0 +1,43 @@
+.container-fluid{
+  font-family: 'Century Gothic';
+  background-image: url(/assets/images/project-wallpaper-01.png);
+  background-attachment:fixed;
+  background-size: 1300px 800px;
+}
+
+h3{
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.img-responsive{
+  padding-top: 70px;
+  padding-bottom: 40px;
+  display: block;
+  margin: auto;
+ }
+
+.glyphicon{
+  color: #9e2332;
+  font-size: 160px;
+  margin-bottom: 10px;
+  padding-top: 15px;
+}
+
+.col-sm-6 > h1{
+  font-size: 50px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.col-sm-6 > h2{
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  color: #9e2332;
+}
+
+.vision{
+  background: #f2f2f2;
+}

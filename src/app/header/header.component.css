@@ -1,0 +1,41 @@
+.abc{
+  font-family: "Century Gothic";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 17.5px !important;
+}
+
+.navbar-custom {
+	background-color:#8c8c8c;
+    color:#ffffff;
+  	border-radius:0;
+}
+
+.navbar-custom .navbar-nav > li > a {
+  	color:rgb(0, 0, 0);
+}
+
+.navbar-custom .navbar-nav > .active > a {
+    color: #ffffff;
+	background-color:transparent;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus,
+.navbar-custom .navbar-nav > .open >a {
+    text-decoration: none;
+    color: #ffffff !important;
+    background-color:transparent;
+}
+
+.navbar-custom .navbar-brand {
+  	color:#000000;
+}
+.navbar-custom .navbar-toggle {
+  	background-color:#000000;
+}
+.navbar-custom .icon-bar {
+  	background-color:#737373;
+}

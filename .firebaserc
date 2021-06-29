@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "oon-2021": {
+      "hosting": {
+        "oceanofnotes2021": [
+          "oon-2021"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "oon-2021"
+  }
+}

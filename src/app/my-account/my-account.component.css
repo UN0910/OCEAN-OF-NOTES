@@ -1,0 +1,81 @@
+.container-fluid{
+  font-family: "Century Gothic";
+  background-image: url(/assets/images/project-wallpaper-01.png);
+  background-attachment: fixed;
+  background-size: 1300px 800px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  padding-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  font-style: italic;
+}
+
+h4 {
+  right: -30px;
+  font-size: 45px;
+  text-align: right;
+  position: relative;
+  font-weight: 400;
+  color: #9e2332;
+}
+p {
+  right: -20px;
+  position: relative;
+  text-align: right;
+  font-size: 20px;
+  font-style: italic;
+}
+
+h2 {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3{
+  font-size: 20px;
+  text-align: center;
+}
+
+h5{
+  text-align: center;
+}
+
+button{
+  background-color: #9e2332;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  text-transform: uppercase;
+  border: #9e2332;
+}
+
+button:hover{
+  background: #9e2332;
+}
+
+.welcome {
+  display: flex;
+}
+
+.welcome-text {
+  z-index: 2;
+  width: 40%;
+  position: relative;
+}
+.welcome-img {
+  z-index: 1;
+  width: 40%;
+  position: relative;
+}
+
+#profile_person_img {
+  bottom: 0;
+  width: 100%;
+  border-radius: 20px;
+}

@@ -1,0 +1,49 @@
+<app-alert [message]="popup" *ngIf="submitted" (close)="onClose()"></app-alert>
+<div class="container-fluid">
+  <form [formGroup]="uploadForm" (ngSubmit)="onSubmit()">
+    <h1>UPLOAD NOTES</h1>
+    <br>
+    <div class="form-group">
+      <label for="name">NAME<span>Uploaded By</span></label>
+      <input type="text" name="name" id="name" formControlName="name" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="caption">Caption<span>Notes Name</span></label>
+      <input type="text" name="caption" id="caption" formControlName="caption" class="form-control">
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description<span>Notes Description</span></label>
+      <input type="text" name="description" id="description" formControlName="description" class="form-control">
+    </div>
+
+    <div class="form-group file-area">
+      <label for="files">File<span>Select your file here</span></label>
+      <input (change)="uploadFile($event)" type="file" name="files" id="files" required="required">
+      <div class="file-dummy">
+        <div class="success" *ngIf="downloadURL">Great, your file is uploaded!!</div>
+        <div class="loading" *ngIf="uploadPercent && !downloadURL" >Wait, Your file is being uploaded</div>
+        <div class="default" *ngIf="!downloadURL && !uploadPercent">Drag and drop or select</div>
+      </div>
+    </div>
+
+    <div class="text-center" *ngIf="uploadPercent | async as pct">
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active"
+        role="progressbar"
+        [style.width]="(pct) + '%'" [attr.aria-valuenow]="(pct)"
+        aria-valuemin="0" aria-valuemax="100"
+        style="background-color: #9e2332 !important;"></div>
+      </div>
+      {{ pct | number }}%
+    </div>
+  <br>
+    <div class="text-center">
+    <div class="form-group">
+      <button class="btn btn-primary" [disabled]="!uploadForm.valid" type="submit">SUBMIT</button>
+    </div>
+  </div>
+
+  </form>
+  </div>

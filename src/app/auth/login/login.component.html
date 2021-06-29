@@ -1,0 +1,33 @@
+<body>
+  <section>
+    <div class="container">
+      <div class="user signinBx">
+        <div class="imgBx"><img src="/assets/images/sign-in-01.png" width="400px" height="500px"></div>
+        <div class="formBx">
+          <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+            <h2>Sign In</h2>
+            <app-loading *ngIf="showSpinner && !authError"></app-loading>
+            <div class="row" *ngIf="authError">
+              <div class="col-12 alert alert-danger">{{ authError?.message }}</div>
+            </div>
+            <input ngModel #email="ngModel" name="email" type="email" class="form-control" required email placeholder="E-MAIL ID">
+            <input ngModel #password="ngModel" name="password" type="password" class="form-control" required minlength="6" maxlength="12" placeholder="PASSWORD">
+            <div class="text-center">
+              <button class="btn btn-primary" [disabled]="!loginForm.valid" type="submit">LOGIN</button>
+            </div>
+            <br>
+            <p class="signup" style="text-align: center;">
+              Don't have an account ?<br>
+              <a routerLink="/authenticate-sign-up">Sign Up.</a>
+            </p>
+            <p class="forgot" style="text-align: center;">
+              can't remember the password ?<br>
+              <a routerLink="/forgot-password">reset password</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+

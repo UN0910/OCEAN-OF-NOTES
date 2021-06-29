@@ -1,0 +1,123 @@
+.container-fluid{
+  background-image: url("/assets/images/project-wallpaper-01.png");
+  background-attachment: fixed;
+  background-size: 1300px 800px;
+  font-family: 'Century Gothic';
+}
+
+h1 {
+  padding-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  font-style: italic;
+}
+
+.alert{
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.list-group-item{
+  padding: 20px 20px;
+  background-color: #e6e6e6;
+  border-radius: 20px;
+  border: 2px solid #8c8c8c;
+  margin: 10px;
+}
+
+h4{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+p{
+  font-size: 20px;
+  color: black;
+}
+
+button{
+  margin-top: 3px;
+}
+
+.view{
+  background-color: #9e2332;
+  color: white;
+  font-style: italic;
+}
+
+.download{
+  background-color: #9e2332;
+  color: white;
+  font-style: italic;
+}
+
+.searchbar{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.searchbar input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.searchbar .fa{
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: #07051a;
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 1s;
+}
+
+.searchbar:hover{
+  width: 500px;
+  cursor: pointer;
+}
+
+.searchbar:hover input{
+  display: block;
+}
+
+.searchbar:hover .fa{
+  background: #07051a;
+  color: white;
+}
+
+span{
+  padding-top: 13px;
+}
+

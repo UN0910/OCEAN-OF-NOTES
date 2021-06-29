@@ -1,0 +1,23 @@
+<app-alert [message]="popup" [message2]="popup1" *ngIf="authenticate" (close)="onClose()"></app-alert>
+<div class="container-fluid">
+  <div class="row">
+    <div class="text-center">
+      <br>
+      <div class="upload">
+      <div class="col-sm-6">
+        <h1>WANT TO UPLOAD <br> NOTES???</h1><br>
+        <img (click)="goToUpload()" src="/assets/images/upload.png" width="500px" height="500px">
+      </div>
+    </div>
+    <div class="image">
+      <img src="/assets/images/logo-main.png" alt="OCEAN-OF-NOTES" class="img-responsive">
+    </div>
+      <div class="download">
+      <div class="col-sm-6">
+        <h1>WANT TO DOWNLOAD <br> NOTES???</h1>
+        <img routerLink="download" src="/assets/images/download.png" width="500px" height="520px">
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
